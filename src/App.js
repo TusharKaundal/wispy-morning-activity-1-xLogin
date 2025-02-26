@@ -25,8 +25,8 @@ export default function App() {
       {error && <p>Invalid username or password</p>}
       {!formData.user && (
         <form onSubmit={handleSubmit}>
-          <label>
-            Username:
+          <div>
+            <label htmlFor="username">Username:</label>
             <input
               type="text"
               id="username"
@@ -35,18 +35,20 @@ export default function App() {
               onChange={(e) => setUser(e.target.value)}
               required
             />
-          </label>
-          <label htmlFor="password">
-            Password:
+          </div>
+
+          <div>
+            <label htmlFor="password">Password:</label>
             <input
               type="password"
               id="password"
               name="password"
-              value={password} 
+              value={password}
               onChange={(e) => setPass(e.target.value)}
               required
             />
-          </label>
+          </div>
+
           <button type="submit">Submit</button>
         </form>
       )}
