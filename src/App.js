@@ -21,7 +21,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>Login Page</h1>
-      {formData.user && <div>Welcome {username}!</div>}
+      {formData.user && <div>Welcome, {username}!</div>}
       {error && <p>Invalid username or password</p>}
       {!formData.user && (
         <form onSubmit={handleSubmit}>
