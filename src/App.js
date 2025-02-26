@@ -31,6 +31,7 @@ export default function App() {
               type="text"
               id="username"
               name="username"
+              value={username}
               onChange={(e) => setUser(e.target.value)}
               required
             />
@@ -41,6 +42,7 @@ export default function App() {
               type="password"
               id="password"
               name="password"
+              value={password} 
               onChange={(e) => setPass(e.target.value)}
               required
             />
