@@ -1,0 +1,13 @@
+.App {
+  font-family: sans-serif;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+button {
+  width: fit-content;
+}
